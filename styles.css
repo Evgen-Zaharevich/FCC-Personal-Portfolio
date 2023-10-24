@@ -17,9 +17,11 @@ html {
 }
 
 body {
+  width: 100vw;
   font-size: 18px;
   font-weight: 400;
   color: white;
+  font-family: "Cinzel", serif;
 }
 
 body::before {
@@ -37,8 +39,47 @@ body::before {
   background-size: contain;
 }
 
+.container {
+  margin: 0 40px;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-bottom: 2px solid white;
+}
+
+.navbar_list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar_item {
+  padding: 10px;
+  margin: 10px;
+  list-style-type: none;
+}
+
+.navbar_item:hover > .navbar_link,
+.navbar_item:focus > .navbar_link {
+}
+
+.navbar_item:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navbar_link {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 h1 {
-  font-family: "Cinzel", serif;
   font-weight: 700;
   font-size: 32px;
 }

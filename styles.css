@@ -17,39 +17,23 @@ html {
 }
 
 body {
-  width: 100vw;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
   color: white;
   font-family: "Cinzel", serif;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /* opacity: 0.9; */
-  background-image: url(https://coffeewithdennis.com/wp-content/uploads/2022/06/matrix-green-code-7247571.png);
-  background-repeat: repeat;
-  background-position: center;
-  background-size: contain;
-}
-
 .container {
-  margin: 0 40px;
-  position: relative;
+  padding: 0 40px;
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   right: 0;
   border-bottom: 2px solid white;
+  background-color: black;
 }
 
 .navbar_list {
@@ -79,7 +63,43 @@ header {
   text-decoration: none;
 }
 
-h1 {
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  margin-top: 67px;
+  background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618658424_35-phonoteka_org-p-programmnii-kod-fon-54.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 2px solid white;
+}
+
+.welcome-section_title {
+  text-align: center;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 100px;
+  padding-top: 120px;
+}
+
+.welcome-section_name {
+  font-size: 200px;
+}
+
+.about {
+  background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618658420_21-phonoteka_org-p-programmnii-kod-fon-34.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about_text {
+  padding: 100px;
+  text-indent: 50px;
+}
+
+#projects {
+  background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618658424_35-phonoteka_org-p-programmnii-kod-fon-54.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

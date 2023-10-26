@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playpen+Sans&display=swap");
 
 * {
   margin: 0;
@@ -18,9 +18,9 @@ html {
 
 body {
   font-size: 20px;
-  font-weight: 700;
-  color: white;
+  font-weight: 400;
   font-family: "Cinzel", serif;
+  color: white;
 }
 
 .container {
@@ -47,7 +47,11 @@ header {
   list-style-type: none;
 }
 
-.navbar_item:hover > .navbar_link,
+.navbar_link {
+  color: chartreuse;
+}
+
+. .navbar_item:hover > .navbar_link,
 .navbar_item:focus > .navbar_link {
 }
 
@@ -57,7 +61,7 @@ header {
 }
 
 .navbar_link {
-  color: white;
+  color: orange;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
@@ -82,24 +86,43 @@ header {
 }
 
 .welcome-section_name {
-  font-size: 200px;
+  font-size: 10vw;
 }
 
 .about {
+  background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618658383_11-phonoteka_org-p-programmnii-kod-fon-15.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 2px solid white;
+  padding: 100px;
+}
+
+.about_text {
+  font-family: "Playpen Sans", cursive;
+  text-indent: 50px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: orange;
+  padding: 20px;
+  color: black;
+}
+
+.about_text--accent {
+  font-family: "Tahoma", serif;
+  font-size: 32px;
+  color: #f44336;
+}
+
+#projects {
   background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618658420_21-phonoteka_org-p-programmnii-kod-fon-34.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.about_text {
-  padding: 100px;
-  text-indent: 50px;
-}
-
-#projects {
-  background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618658424_35-phonoteka_org-p-programmnii-kod-fon-54.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }

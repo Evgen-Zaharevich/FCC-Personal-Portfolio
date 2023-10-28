@@ -20,11 +20,15 @@ body {
   font-size: 20px;
   font-weight: 400;
   font-family: "Cinzel", serif;
-  color: white;
+  color: orange;
 }
 
 .container {
   padding: 0 40px;
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
 }
 
 header {
@@ -48,6 +52,16 @@ header {
   list-style-type: none;
   transition-duration: 300ms;
   border-radius: 4px;
+
+  @media (max-width: 768px) {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  @media (min-width: 1800px) {
+    padding: 20px;
+    margin: 20px;
+  }
 }
 
 .navbar_item:hover,
@@ -71,17 +85,29 @@ header {
   font-weight: 700;
   text-decoration: none;
   transition-duration: 300ms;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 40px;
+  }
 }
 
 #welcome-section {
   width: 100%;
   height: 100vh;
-  margin-top: 67px;
+  padding-top: 67px;
   background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618658424_35-phonoteka_org-p-programmnii-kod-fon-54.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-bottom: 2px solid white;
+
+  @media (max-width: 768px) {
+    padding-top: 40px;
+  }
 }
 
 .welcome-section_title {
@@ -90,6 +116,11 @@ header {
   font-size: 5vw;
   padding-top: 50px;
   text-shadow: 10px 10px 5px #000000;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 8vw;
+  }
 }
 
 .welcome-section_name {
@@ -98,6 +129,8 @@ header {
 }
 
 .about {
+  display: flex;
+  align-items: center;
   height: 100vh;
   background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618658383_11-phonoteka_org-p-programmnii-kod-fon-15.jpg);
   background-repeat: no-repeat;
@@ -105,6 +138,10 @@ header {
   background-size: cover;
   border-bottom: 2px solid white;
   padding: 110px;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
 }
 
 .about_text {
@@ -115,12 +152,36 @@ header {
   padding: 20px;
   color: black;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 40px;
+  }
 }
 
 .about_text--accent {
   font-family: "Tahoma", serif;
   font-size: 32px;
   color: #f44336;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 50px;
+  }
 }
 
 #projects {
@@ -135,9 +196,16 @@ header {
   font-size: 50px;
   padding: 30px 0;
   text-align: center;
-  color: orange;
   text-decoration: underline;
   text-shadow: 2px 2px 4px #000000;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 100px;
+  }
 }
 
 .project-list {
@@ -176,7 +244,6 @@ header {
 }
 
 .project-item_link {
-  color: white;
   text-decoration: none;
 }
 
@@ -188,6 +255,10 @@ header {
   font-weight: 700;
   transition-duration: 300ms;
   box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+
+  @media (min-width: 1800px) {
+    font-size: 40px;
+  }
 }
 
 #profile-link {
@@ -204,6 +275,17 @@ header {
   text-decoration: none;
   transition-duration: 300ms;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+  @media (max-width: 768px) {
+    padding: 5px;
+    font-size: 12px;
+    width: 40%;
+    margin: 50px auto 20px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 40px;
+  }
 }
 
 #profile-link:hover,
@@ -228,8 +310,12 @@ header {
   text-align: center;
   font-size: 5vw;
   padding: 110px 0;
-  color: orange;
   text-shadow: 7px 7px 7px #000000;
+
+  @media (max-width: 768px) {
+    font-size: 6vw;
+    padding: 70px 0;
+  }
 }
 
 .contacts_container-link {
@@ -250,9 +336,38 @@ header {
   box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 12px;
   transition-duration: 300ms;
+  width: 50px;
+
+  @media (max-width: 768px) {
+    border-radius: 5px;
+  }
+
+  @media (min-width: 1800px) {
+    width: 150px;
+    border-radius: 15px;
+  }
 }
 
 .contacts_link:hover .contacts_image,
 .contacts_link:focus .contacts_image {
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  border-top: 2px solid white;
+  background-color: black;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    height: 60px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 40px;
+  }
 }

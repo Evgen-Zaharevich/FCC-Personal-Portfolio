@@ -29,12 +29,12 @@ body {
 
 header {
   width: 100vw;
-  /* height: 72px; */
   position: fixed;
   top: 0;
   right: 0;
   border-bottom: 2px solid white;
   background-color: black;
+  z-index: 1;
 }
 
 .navbar_list {
@@ -47,22 +47,22 @@ header {
   margin: 10px;
   list-style-type: none;
   transition-duration: 300ms;
+  border-radius: 4px;
 }
 
-.navbar_item:hover {
+.navbar_item:hover,
+.navbar_item:focus {
   transform: scale(1.05);
-  /* border: 2px solid white; */
-  border-radius: 4px;
   background-color: orange;
 }
 
-.navbar_item:hover .navbar_link {
+.navbar_item:hover .navbar_link,
+.navbar_item:focus .navbar_link {
   color: black;
 }
 
 .navbar_item:first-child {
   margin-left: 0;
-  /* padding-left: 0; */
 }
 
 .navbar_link {
@@ -89,7 +89,7 @@ header {
   font-weight: 700;
   font-size: 5vw;
   padding-top: 50px;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 10px 10px 5px #000000;
 }
 
 .welcome-section_name {
@@ -110,11 +110,11 @@ header {
 .about_text {
   font-family: "Playpen Sans", cursive;
   text-indent: 50px;
-  border: 2px solid white;
   border-radius: 8px;
   background-color: orange;
   padding: 20px;
   color: black;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .about_text--accent {
@@ -153,13 +153,16 @@ header {
   transition-duration: 300ms;
 }
 
-.project-item:hover .project-item_image {
+.project-item:hover .project-item_image,
+.project-item:focus .project-item_image {
   transform: scale(1.02);
   background-color: black;
   color: orange;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.project-item:hover .project-item_name {
+.project-item:hover .project-item_name,
+.project-item:focus .project-item_name {
   background-color: black;
   color: orange;
 }
@@ -168,8 +171,8 @@ header {
   width: 100%;
   height: 90%;
   border-radius: 4px;
-  border: 2px solid white;
   transition-duration: 300ms;
+  box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .project-item_link {
@@ -181,10 +184,10 @@ header {
   text-align: center;
   color: black;
   background-color: orange;
-  border: 2px solid white;
   border-radius: 4px;
   font-weight: 700;
   transition-duration: 300ms;
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 #profile-link {
@@ -196,11 +199,11 @@ header {
   padding: 10px;
   color: black;
   background-color: orange;
-  border: 2px solid white;
   border-radius: 4px;
   font-weight: 700;
   text-decoration: none;
   transition-duration: 300ms;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 #profile-link:hover,
@@ -208,6 +211,7 @@ header {
   transform: scale(1.05);
   background-color: black;
   color: orange;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .contacts {
@@ -225,7 +229,7 @@ header {
   font-size: 5vw;
   padding: 110px 0;
   color: orange;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 7px 7px 7px #000000;
 }
 
 .contacts_container-link {
@@ -240,4 +244,15 @@ header {
 .contacts_link:hover,
 .contacts_link:focus {
   transform: scale(1.1);
+}
+
+.contacts_image {
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  transition-duration: 300ms;
+}
+
+.contacts_link:hover .contacts_image,
+.contacts_link:focus .contacts_image {
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
